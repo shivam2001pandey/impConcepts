@@ -1,0 +1,19 @@
+                                      Important Concepts
+                                      
+1>.Number of digits(2/5 or any ) in n!                               https://www.youtube.com/watch?v=5j24Jepc5GI&t=820s
+    ->keep on dividing the last number with digit whose occurance is to be calculated and again with quotient
+    
+2>.count of digits present in this number.
+    ->K = floor(log10(N) + 1)
+    
+    
+        ->10K-1 <= N < 10K
+        Applying base-10 logarithm to both sides in the above equation, we get:
+          K-1 <= log10(N) < K.
+
+          or, K - 1 + 1 <= log10(N) + 1 < K + 1
+          or, K <= log10(N) + 1 < K + 1 
+          Therefore,
+          K = floor(log10(N) + 1)
+          
+
