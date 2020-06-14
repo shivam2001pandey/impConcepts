@@ -1,6 +1,6 @@
                                       Important Concepts
                                       
-1>.Number of digits(2/5 or any ) in n!                               https://www.youtube.com/watch?v=5j24Jepc5GI&t=820s
+1>.Number of digits(2/5 or any ) or Trailing 0s in n!                               https://www.youtube.com/watch?v=5j24Jepc5GI&t=820s
     ->keep on dividing the last number with digit whose occurance is to be calculated and again with quotient
     
 2>.count of digits present in this number.
