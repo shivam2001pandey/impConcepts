@@ -1,0 +1,25 @@
+  
+//User function Template for C++
+
+//You need to complete this function
+
+int digitsInFactorial(int N)
+{
+    //Your code here
+    
+    double totalDigits=0;
+     while( N!= 0) {
+     	
+     	totalDigits +=  log10(N);
+     	N--;
+	 } 
+	 return floor(totalDigits)+1;
+    
+}
+
+/*n!=1 x 2 x 3 x....... n
+log10(n!)=log10(1 x 2 x 3 x...n)
+log10(n!)=log10(1) + log10(2) + log10(3) +....log10(n)
+floor(log10(n!)) +1=floor(log10(1) + log10(2) + log10(3) +....log10(n)) +1
+number of digits in n!=floor(log10(1) + log10(2) + log10(3) +....log10(n)) +1
+*/
