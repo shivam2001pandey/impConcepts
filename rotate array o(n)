@@ -1,0 +1,19 @@
+void rotateArr(int arr[], int d, int n){
+    
+   // Your code here
+  int x=-1,i,temp,j;
+ for(i=0;i<gcd(n,d);i++)
+ {
+  j=i;
+  temp=arr[i];
+  while(1)
+  {
+   x=(j+d)%n;
+   if(x==i)
+    break;
+   arr[j]=arr[x];
+   j=x;
+  }
+  arr[j]=temp;
+ }
+}
