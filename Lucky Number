@@ -16,3 +16,4 @@ bool isLucky(int n, int &counter) {
     
     
 }
+ 
