@@ -1,0 +1,46 @@
+// { Driver Code Starts
+#include<bits/stdc++.h>
+using namespace std;
+
+void permutation(string S);
+
+int main()
+{
+	int T;
+	cin>>T;
+	while(T--)
+	{
+		string S;
+		cin>>S;
+		permutation(S);
+		cout<<endl;
+	
+	}
+	return 0;
+}// } Driver Code Ends
+
+
+//Complete this function
+
+void p(string s,int l,int r)
+{
+    if(l==r) cout<<s<<" ";
+    else
+    {
+     for(int i=l;i<=r;i++)   
+      {
+        swap(s[l],s[i]);
+        sort(s.begin()+i,s.end());//lexicographically increasing order.
+        p(s,1+l,r);
+        swap(s[l],s[i]);
+      }
+    }
+}
+void permutation(string S)
+{
+    //Your code here
+    p(S,0,S.size()-1);
+     
+     
+    
+}
