@@ -18,3 +18,4 @@ vector <string> powerSet(string s)
    temp(v,curr,s,0);
    return v;
 }
+//https://www.google.com/amp/s/www.geeksforgeeks.org/recursive-program-to-generate-power-set/amp/
